@@ -1,0 +1,381 @@
+/**
+ * Custom video player
+ * 1. Settings
+ * 2. Time input track styles
+ * 3. Time input thumb styles
+ * 4. Volume input track styles
+ * 5. Volume input thumb styles
+ * 6. Custom video player wrapper styles
+ * 7. Indicator for playback state
+ * 8. HTML Video styles
+ * 9. Controls wrapper
+ * 10. Progress wrapper
+ * 11. Progress bar styles - cross browser progress element for displaying elapsed time
+ * 12. Time range input styles - cross browser range input for navigating in time
+ * 13. Actions wrapper - contains all action buttons
+ * 14. Actions left area
+ * 15. Volume wrapper
+ * 16. Volume range input styles - cross browser range input for volume
+ * 17. Action buttons - accessible buttons that do action
+ * 18. Icon manipulation
+ * 19. Reset SVG styles inside player
+ */
+
+/* 1 */
+$time-track-w: 100%;
+$time-track-h: 3px;
+$time-thumb-d: 12px;
+$time-thumb-bg: red;
+$time-elapsed-bg: red;
+$volume-track-w: 100%;
+$volume-track-h: 3px;
+$volume-thumb-d: 11px;
+$volume-track-bg: $white;
+$volume-thumb-bg: $white;
+
+/* 2 */
+@mixin time-track() {
+    box-sizing: border-box;
+    border: none;
+    width: $time-track-w;
+    height: $time-track-h;
+    background: transparent;
+}
+
+/* 3 */
+@mixin time-thumb() {
+    box-sizing: border-box;
+    border: none;
+    width: $time-thumb-d;
+    height: $time-thumb-d;
+    border-radius: 50%;
+    background: $time-thumb-bg;
+}
+
+/* 4 */
+@mixin volume-track() {
+    box-sizing: border-box;
+    border: none;
+    width: $volume-track-w;
+    height: $volume-track-h;
+    background: $volume-track-bg;
+}
+
+/* 5 */
+@mixin volume-thumb() {
+    box-sizing: border-box;
+    border: none;
+    width: $volume-thumb-d;
+    height: $volume-thumb-d;
+    border-radius: 50%;
+    background: $volume-thumb-bg;
+}
+
+/* 6 */
+.c-custom-video-player {
+    position: relative;
+    overflow: hidden;
+    color: $white;
+    font-family: $font-primary;
+    $font-size: (
+            $breakpoint-sm: 13px,
+            $breakpoint-xl: 14px,
+            $breakpoint-xxl: 16px,
+    );
+    @include poly-fluid-sizing("font-size", $font-size);
+    $line-height: (
+            $breakpoint-sm: 19px,
+            $breakpoint-xl: 20px,
+            $breakpoint-xxl: 22px,
+    );
+    @include poly-fluid-sizing("line-height", $line-height);
+
+    &:hover {
+        .c-custom-video-player__controls {
+            transform: translateY(0%);
+        }
+    }
+
+    /* 7 */
+    &__state-indicator {
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: rem(50px);
+        height: rem(50px);
+        border-radius: 100%;
+        background-color: $black-50;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0;
+        visibility: hidden;
+        transition: getTransition();
+
+        .is-paused & {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+
+    /* 8 */
+    &__video {
+        width: 100%;
+        height: 100%;
+    }
+
+    /* 9 */
+    &__controls {
+        right: 0;
+        left: 0;
+        padding: rem(35px) rem(10px) rem(10px);
+        position: absolute;
+        bottom: 0;
+        transition: getTransition("slide");
+        background: linear-gradient(180deg, transparent 0%, $black-70 80%);
+        transform: translateY(100%);
+
+        .is-paused & {
+            transform: translateY(0%);
+        }
+    }
+
+    /* 10 */
+    &__progress {
+        position: relative;
+        height: $time-track-h;
+    }
+
+    /* 11 */
+    &__progress-bar {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        border: none;
+        outline: none;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        height: $time-track-h;
+        pointer-events: none;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+
+        &::-webkit-progress-bar {
+            background-color: rgba($white, 0.3);
+        }
+
+        &::-webkit-progress-value {
+            background: $time-elapsed-bg;
+        }
+
+        &::-moz-progress-bar {
+            background: $time-elapsed-bg;
+        }
+
+        &::-ms-fill {
+            background: $time-elapsed-bg;
+        }
+    }
+
+    /* 12 */
+    &__time-input {
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        -webkit-appearance: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        box-shadow: none;
+        outline: none;
+        transition: getTransition();
+        cursor: pointer;
+        min-height: $time-thumb-d;
+        background: transparent;
+        font: inherit;
+
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+        }
+
+        &::-webkit-slider-runnable-track {
+            @include time-track();
+        }
+
+        &::-moz-range-track {
+            @include time-track;
+        }
+
+        &::-ms-track {
+            @include time-track;
+        }
+
+        &::-webkit-slider-thumb {
+            margin-top: 0.5 * ($time-track-h - $time-thumb-d);
+            @include time-thumb;
+        }
+
+        &::-moz-range-thumb {
+            @include time-thumb;
+        }
+
+        &::-ms-thumb {
+            margin-top: 0;
+            @include time-thumb;
+        }
+
+        &::-ms-tooltip {
+            display: none;
+        }
+    }
+
+    /* 13 */
+    &__actions {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: rem(15px);
+    }
+
+    /* 14 */
+    &__actions-left {
+        display: flex;
+        align-items: center;
+        flex: 1 0 0;
+    }
+
+    /* 15 */
+    &__volume {
+        display: flex;
+        align-items: center;
+    }
+
+    /* 16 */
+    &__volume-input {
+        -webkit-appearance: none;
+        margin: 0 rem(10px);
+        padding: 0;
+        width: rem(100px);
+        box-shadow: none;
+        outline: none;
+        transition: getTransition();
+        cursor: pointer;
+        min-height: $volume-thumb-d;
+        background: transparent;
+        font: inherit;
+
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+        }
+
+        &::-webkit-slider-runnable-track {
+            @include volume-track();
+        }
+
+        &::-moz-range-track {
+            @include volume-track;
+        }
+
+        &::-ms-track {
+            @include volume-track;
+        }
+
+        &::-webkit-slider-thumb {
+            margin-top: 0.5 * ($volume-track-h - $volume-thumb-d);
+            @include volume-thumb;
+        }
+
+        &::-moz-range-thumb {
+            @include volume-thumb;
+        }
+
+        &::-ms-thumb {
+            margin-top: 0;
+            @include volume-thumb;
+        }
+
+        &::-ms-tooltip {
+            display: none;
+        }
+    }
+
+    /* 17 */
+    &__action-button {
+        background: transparent;
+        text-decoration: none;
+        cursor: pointer;
+        padding: 5px rem(10px);
+        outline: none;
+        border: none;
+        vertical-align: top;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        border-radius: 0;
+        position: relative;
+    }
+
+    /* 18 */
+    &__play {
+        display: none;
+
+        .is-paused & {
+            display: inline-block;
+        }
+    }
+
+    &__pause {
+        display: inline-block;
+
+        .is-paused & {
+            display: none;
+        }
+    }
+
+    &__sound {
+        display: inline-block;
+
+        .is-muted & {
+            display: none;
+        }
+    }
+
+    &__mute {
+        display: none;
+
+        .is-muted & {
+            display: inline-block;
+        }
+    }
+
+    &__full-screen {
+        display: inline-block;
+
+        .is-full-screen & {
+            display: none;
+        }
+    }
+
+    &__exit-full-screen {
+        display: none;
+
+        .is-full-screen & {
+            display: inline-block;
+        }
+    }
+
+    /* 19 */
+    svg {
+        width: rem(12px);
+        height: rem(12px);
+        stroke-width: 0;
+        stroke: currentColor;
+        fill: currentColor;
+        color: $white;
+    }
+}

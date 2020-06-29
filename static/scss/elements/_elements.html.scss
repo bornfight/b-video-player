@@ -1,0 +1,11 @@
+html,
+body {
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    @include font-default;
+    @include default-font-size;
+    color: $black;
+    background-color: $white;
+}

@@ -54,19 +54,36 @@ export default class CustomVideoPlayer {
         for (let i = 0; i < this.videoPlayer.length; i++) {
             let videoContainer = this.videoPlayer[i];
             let videoEl = videoContainer.querySelector(this.DOM.videoEl);
-            let videoProgressBarEl = videoContainer.querySelector(this.DOM.videoProgressBarEl);
-            let videoDurationEl = videoContainer.querySelector(this.DOM.videoDurationEl);
-            let videoCurrentTimeEl = videoContainer.querySelector(this.DOM.videoCurrentTimeEl);
+            let videoProgressBarEl = videoContainer.querySelector(
+                this.DOM.videoProgressBarEl,
+            );
+            let videoDurationEl = videoContainer.querySelector(
+                this.DOM.videoDurationEl,
+            );
+            let videoCurrentTimeEl = videoContainer.querySelector(
+                this.DOM.videoCurrentTimeEl,
+            );
             let timeInput = videoContainer.querySelector(this.DOM.timeInput);
-            let volumeInput = videoContainer.querySelector(this.DOM.volumeInput);
+            let volumeInput = videoContainer.querySelector(
+                this.DOM.volumeInput,
+            );
             let playButton = videoContainer.querySelector(this.DOM.playButton);
-            let volumeButton = videoContainer.querySelector(this.DOM.volumeButton);
-            let fullScreenButton = videoContainer.querySelector(this.DOM.fullScreenButton);
+            let volumeButton = videoContainer.querySelector(
+                this.DOM.volumeButton,
+            );
+            let fullScreenButton = videoContainer.querySelector(
+                this.DOM.fullScreenButton,
+            );
 
             /**
              * Await meta data
              */
-            this.awaitMeta(videoEl, timeInput, videoProgressBarEl, videoDurationEl);
+            this.awaitMeta(
+                videoEl,
+                timeInput,
+                videoProgressBarEl,
+                videoDurationEl,
+            );
 
             /**
              * Video timeupdate event
@@ -130,11 +147,21 @@ export default class CustomVideoPlayer {
      */
     awaitMeta(videoEl, timeInput, videoProgressBarEl, videoDurationEl) {
         if (!isNaN(videoEl.duration)) {
-            this.videoSetup(videoEl, timeInput, videoProgressBarEl, videoDurationEl);
+            this.videoSetup(
+                videoEl,
+                timeInput,
+                videoProgressBarEl,
+                videoDurationEl,
+            );
             console.log("Video meta loaded");
         } else {
             setTimeout(() => {
-                this.awaitMeta(videoEl, timeInput, videoProgressBarEl, videoDurationEl);
+                this.awaitMeta(
+                    videoEl,
+                    timeInput,
+                    videoProgressBarEl,
+                    videoDurationEl,
+                );
             }, 10);
         }
     }
@@ -198,7 +225,9 @@ export default class CustomVideoPlayer {
      * @param timeInput
      */
     goToTime(event, videoEl, videoProgressBarEl, timeInput) {
-        let time = event.target.dataset.time ? event.target.dataset.time : event.target.value;
+        let time = event.target.dataset.time
+            ? event.target.dataset.time
+            : event.target.value;
         videoEl.currentTime = time;
         videoProgressBarEl.value = time;
         timeInput.value = time;
@@ -229,7 +258,9 @@ export default class CustomVideoPlayer {
     toggleFullScreen(videoContainer) {
         if (!document.fullscreenElement) {
             videoContainer.requestFullscreen().catch((err) => {
-                alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+                alert(
+                    `Error attempting to enable full-screen mode: ${err.message} (${err.name})`,
+                );
             });
             videoContainer.classList.add(this.DOM.states.fullscreen);
         } else {

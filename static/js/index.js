@@ -15,7 +15,7 @@ const ready = (callbackFunc) => {
         /**
          * Old IE browsers
          */
-        document.attachEvent("onreadystatechange", function() {
+        document.attachEvent("onreadystatechange", function () {
             if (document.readyState === "complete") {
                 callbackFunc();
             }

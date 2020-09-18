@@ -2,7 +2,7 @@
  * Custom video player
  */
 export default class CustomVideoPlayer {
-    constructor() {
+    constructor(container) {
         /**
          * Custom video player DOM selectors
          * @type {{volumeInput: string, videoDurationEl: string, volumeButton: string, timeInput: string, fullScreenButton: string, playButton: string, videoEl: string, videoPlayer: string, videoProgressBarEl: string, videoCurrentTimeEl: string, states: {paused: string, fullscreen: string, playing: string, mute: string}}}
@@ -26,17 +26,19 @@ export default class CustomVideoPlayer {
             },
         };
 
-        /**
-         *
-         * @type {NodeListOf<HTMLElement>}
-         */
-        this.videoPlayer = document.querySelectorAll(this.DOM.videoPlayer);
+        this.container = container || document;
     }
 
     /**
      * Init
      */
-    init() {
+    init(container = this.container) {
+        /**
+         *
+         * @type {NodeListOf<HTMLElement>}
+         */
+        this.videoPlayer = container.querySelectorAll(this.DOM.videoPlayer);
+
         if (this.videoPlayer.length < 1) {
             return;
         }

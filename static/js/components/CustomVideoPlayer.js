@@ -26,11 +26,17 @@ export default class CustomVideoPlayer {
             },
         };
 
+        /**
+         * Custom wrapper, if not provided everything will be related to document
+         * Custom wrapper can be passed to class or to every instance od init() method
+         * @type {Element|Document}
+         */
         this.container = container || document;
     }
 
     /**
-     * Init
+     *
+     * @param {Element} container
      */
     init(container = this.container) {
         /**

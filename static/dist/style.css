@@ -1,1 +1,1174 @@
-@font-face{font-family:Hanken-Grotesk;src:url(../fonts/HankenGrotesk-Regular.woff2?1) format("woff2"),url(../fonts/HankenGrotesk-Regular.woff?1) format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:Hanken-Grotesk;src:url(../fonts/HankenGrotesk-SemiBold.woff2?1) format("woff2"),url(../fonts/HankenGrotesk-SemiBold.woff?1) format("woff");font-weight:600;font-style:normal;font-display:swap}html{line-height:1.15;-webkit-text-size-adjust:100%;-webkit-box-sizing:border-box;box-sizing:border-box;width:100%}*,::after,::before{-webkit-box-sizing:inherit;box-sizing:inherit}abbr,address,article,aside,audio,b,blockquote,body,canvas,caption,cite,code,dd,del,details,dfn,div,dl,dt,em,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,p,pre,q,samp,section,small,span,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,ul,var,video{margin:0;padding:0;border:0;outline:0;font-size:100%;vertical-align:baseline;background:0 0}body{scroll-behavior:smooth;text-rendering:optimizeSpeed;-webkit-text-size-adjust:none;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;width:100%}ul{list-style:none}embed,iframe,img,object,video{display:block;max-width:100%}[tabindex="-1"]{outline:0!important}hr{height:0}abbr[title]{-webkit-text-decoration:underline dotted;text-decoration:underline dotted}b,strong{font-weight:700}code,kbd,pre,samp{font-family:SFMono-Regular,Consolas,"Liberation Mono",Menlo,monospace;font-size:1em}small{font-size:80%}sub,sup{font-size:75%;line-height:0;position:relative;vertical-align:baseline}sub{bottom:-.25em}sup{top:-.5em}button,input,optgroup,select,textarea{font-family:inherit;font-size:100%;line-height:1.15;margin:0}button,select{text-transform:none}[type=button],[type=reset],[type=submit],button{-webkit-appearance:button}[type=button]::-moz-focus-inner,[type=reset]::-moz-focus-inner,[type=submit]::-moz-focus-inner,button::-moz-focus-inner{border-style:none;padding:0}[type=button]:-moz-focusring,[type=reset]:-moz-focusring,[type=submit]:-moz-focusring,button:-moz-focusring{outline:1px dotted ButtonText}progress{vertical-align:baseline}[type=number]::-webkit-inner-spin-button,[type=number]::-webkit-outer-spin-button{height:auto}[type=search]{-webkit-appearance:textfield;outline-offset:-2px}[type=search]::-webkit-search-decoration{-webkit-appearance:none}::-webkit-file-upload-button{-webkit-appearance:button;font:inherit}summary{display:list-item}@media (prefers-reduced-motion:reduce){*{-webkit-animation-duration:0s!important;animation-duration:0s!important;-webkit-animation-iteration-count:1!important;animation-iteration-count:1!important;-webkit-transition-duration:0s!important;transition-duration:0s!important;scroll-behavior:auto!important}}input[type=search]::-webkit-search-cancel-button,input[type=search]::-webkit-search-decoration,input[type=search]::-webkit-search-results-button,input[type=search]::-webkit-search-results-decoration{-webkit-appearance:none;display:none}input[type=search]::-ms-clear,input[type=search]::-ms-reveal{display:none;width:0;height:0}input::-webkit-inner-spin-button,input::-webkit-outer-spin-button{-webkit-appearance:none;margin:0}input[type=number]{-moz-appearance:textfield}input[autocomplete=off]::-webkit-contacts-auto-fill-button,input[autocomplete=off]::-webkit-credentials-auto-fill-button,input[autocomplete=off]:focus::-webkit-textfield-decoration-container{visibility:hidden;display:none!important;pointer-events:none;height:0;width:0;margin:0}select::-ms-expand{display:none}input[type=range]::-moz-focus-outer{border:0}body,html{-webkit-font-smoothing:antialiased}body{font-family:Hanken-Grotesk,sans-serif;font-weight:400;font-size:18px;line-height:1.44444em;color:#000;background-color:#fff}a{color:inherit;text-decoration:none}.c-custom-video-player{position:relative;overflow:hidden;color:#fff;font-family:Hanken-Grotesk,sans-serif;font-size:13px;line-height:19px}@media (min-width:480px){.c-custom-video-player{font-size:calc(.1087vw + 12.47826px)}}@media (min-width:1400px){.c-custom-video-player{font-size:calc(.33333vw + 9.33333px)}}@media (min-width:2000px){.c-custom-video-player{font-size:16px}}@media (min-width:480px){.c-custom-video-player{line-height:calc(.1087vw + 18.47826px)}}@media (min-width:1400px){.c-custom-video-player{line-height:calc(.33333vw + 15.33333px)}}@media (min-width:2000px){.c-custom-video-player{line-height:22px}}.c-custom-video-player:hover .c-custom-video-player__controls{-webkit-transform:translateY(0);transform:translateY(0)}.c-custom-video-player__state-indicator{pointer-events:none;position:absolute;top:50%;left:50%;-webkit-transform:translate(-50%,-50%);transform:translate(-50%,-50%);width:3.125rem;height:3.125rem;border-radius:100%;background-color:rgba(0,0,0,.5);display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center;opacity:0;visibility:hidden;-webkit-transition:all .2s cubic-bezier(.55,.085,.68,.53);transition:all .2s cubic-bezier(.55,.085,.68,.53)}.is-paused .c-custom-video-player__state-indicator{opacity:1;visibility:visible}.c-custom-video-player__video{width:100%;height:100%}.c-custom-video-player__controls{right:0;left:0;padding:2.1875rem .625rem .625rem;position:absolute;bottom:0;-webkit-transition:all .3s cubic-bezier(.55,.085,.68,.53);transition:all .3s cubic-bezier(.55,.085,.68,.53);background:-webkit-gradient(linear,left top,left bottom,from(transparent),color-stop(80%,rgba(0,0,0,.7)));background:linear-gradient(180deg,transparent 0,rgba(0,0,0,.7) 80%);-webkit-transform:translateY(100%);transform:translateY(100%)}.is-paused .c-custom-video-player__controls{-webkit-transform:translateY(0);transform:translateY(0)}.c-custom-video-player__progress{position:relative;height:3px}.c-custom-video-player__progress-bar{-webkit-appearance:none;-moz-appearance:none;appearance:none;border:none;outline:0;padding:0;margin:0;width:100%;height:3px;pointer-events:none;position:absolute;top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%)}.c-custom-video-player__progress-bar::-webkit-progress-bar{background-color:rgba(255,255,255,.3)}.c-custom-video-player__progress-bar::-webkit-progress-value{background:red}.c-custom-video-player__progress-bar::-moz-progress-bar{background:red}.c-custom-video-player__progress-bar::-ms-fill{background:red}.c-custom-video-player__time-input{position:absolute;top:50%;left:0;-webkit-transform:translateY(-50%);transform:translateY(-50%);-webkit-appearance:none;margin:0;padding:0;width:100%;-webkit-box-shadow:none;box-shadow:none;outline:0;-webkit-transition:all .2s cubic-bezier(.55,.085,.68,.53);transition:all .2s cubic-bezier(.55,.085,.68,.53);cursor:pointer;min-height:12px;background:0 0;font:inherit}.c-custom-video-player__time-input::-webkit-slider-thumb{-webkit-appearance:none}.c-custom-video-player__time-input::-webkit-slider-runnable-track{-webkit-box-sizing:border-box;box-sizing:border-box;border:none;width:100%;height:3px;background:0 0}.c-custom-video-player__time-input::-moz-range-track{box-sizing:border-box;border:none;width:100%;height:3px;background:0 0}.c-custom-video-player__time-input::-ms-track{box-sizing:border-box;border:none;width:100%;height:3px;background:0 0}.c-custom-video-player__time-input::-webkit-slider-thumb{margin-top:-4.5px;-webkit-box-sizing:border-box;box-sizing:border-box;border:none;width:12px;height:12px;border-radius:50%;background:red}.c-custom-video-player__time-input::-moz-range-thumb{box-sizing:border-box;border:none;width:12px;height:12px;border-radius:50%;background:red}.c-custom-video-player__time-input::-ms-thumb{margin-top:0;box-sizing:border-box;border:none;width:12px;height:12px;border-radius:50%;background:red}.c-custom-video-player__time-input::-ms-tooltip{display:none}.c-custom-video-player__actions{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-pack:justify;-ms-flex-pack:justify;justify-content:space-between;-webkit-box-align:center;-ms-flex-align:center;align-items:center;padding-top:.9375rem}.c-custom-video-player__actions-left{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center;-webkit-box-flex:1;-ms-flex:1 0 0px;flex:1 0 0}.c-custom-video-player__volume{display:-webkit-box;display:-ms-flexbox;display:flex;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.c-custom-video-player__volume-input{-webkit-appearance:none;margin:0 .625rem;padding:0;width:6.25rem;-webkit-box-shadow:none;box-shadow:none;outline:0;-webkit-transition:all .2s cubic-bezier(.55,.085,.68,.53);transition:all .2s cubic-bezier(.55,.085,.68,.53);cursor:pointer;min-height:11px;background:0 0;font:inherit}.c-custom-video-player__volume-input::-webkit-slider-thumb{-webkit-appearance:none}.c-custom-video-player__volume-input::-webkit-slider-runnable-track{-webkit-box-sizing:border-box;box-sizing:border-box;border:none;width:100%;height:3px;background:#fff}.c-custom-video-player__volume-input::-moz-range-track{box-sizing:border-box;border:none;width:100%;height:3px;background:#fff}.c-custom-video-player__volume-input::-ms-track{box-sizing:border-box;border:none;width:100%;height:3px;background:#fff}.c-custom-video-player__volume-input::-webkit-slider-thumb{margin-top:-4px;-webkit-box-sizing:border-box;box-sizing:border-box;border:none;width:11px;height:11px;border-radius:50%;background:#fff}.c-custom-video-player__volume-input::-moz-range-thumb{box-sizing:border-box;border:none;width:11px;height:11px;border-radius:50%;background:#fff}.c-custom-video-player__volume-input::-ms-thumb{margin-top:0;box-sizing:border-box;border:none;width:11px;height:11px;border-radius:50%;background:#fff}.c-custom-video-player__volume-input::-ms-tooltip{display:none}.c-custom-video-player__action-button{background:0 0;text-decoration:none;cursor:pointer;padding:5px .625rem;outline:0;border:none;vertical-align:top;-webkit-appearance:none;-moz-appearance:none;border-radius:0;position:relative}.c-custom-video-player__play{display:none}.is-paused .c-custom-video-player__play{display:inline-block}.c-custom-video-player__pause{display:inline-block}.is-paused .c-custom-video-player__pause{display:none}.c-custom-video-player__sound{display:inline-block}.is-muted .c-custom-video-player__sound{display:none}.c-custom-video-player__mute{display:none}.is-muted .c-custom-video-player__mute{display:inline-block}.c-custom-video-player__full-screen{display:inline-block}.is-full-screen .c-custom-video-player__full-screen{display:none}.c-custom-video-player__exit-full-screen{display:none}.is-full-screen .c-custom-video-player__exit-full-screen{display:inline-block}.c-custom-video-player svg{width:.75rem;height:.75rem;stroke-width:0;stroke:currentColor;fill:currentColor;color:#fff}.u-icon{display:inline-block;width:1em;height:1em;stroke-width:0;stroke:currentColor;fill:currentColor}.u-a3{font-family:Hanken-Grotesk,sans-serif;font-size:35px;line-height:43px;letter-spacing:2px;font-weight:400}@media (min-width:480px){.u-a3{font-size:calc(4.67391vw + 12.56522px)}}@media (min-width:1400px){.u-a3{font-size:78px}}@media (min-width:2000px){.u-a3{font-size:78px}}@media (min-width:480px){.u-a3{line-height:calc(4.67391vw + 20.56522px)}}@media (min-width:1400px){.u-a3{line-height:86px}}@media (min-width:2000px){.u-a3{line-height:86px}}@media (max-width:480px){.u-a3{letter-spacing:0}}.u-a2{font-family:Hanken-Grotesk,sans-serif;font-size:35px;line-height:43px;font-weight:400}@media (min-width:480px){.u-a2{font-size:calc(1.63043vw + 27.17391px)}}@media (min-width:1400px){.u-a2{font-size:50px}}@media (min-width:2000px){.u-a2{font-size:50px}}@media (min-width:480px){.u-a2{line-height:calc(2.5vw + 31px)}}@media (min-width:1400px){.u-a2{line-height:calc(-1.66667vw + 89.33333px)}}@media (min-width:2000px){.u-a2{line-height:56px}}.u-a1{font-family:Hanken-Grotesk,sans-serif;font-size:14px;line-height:20px;letter-spacing:.3px;font-weight:400}@media (min-width:480px){.u-a1{font-size:calc(.43478vw + 11.91304px)}}@media (min-width:1400px){.u-a1{font-size:18px}}@media (min-width:2000px){.u-a1{font-size:18px}}@media (min-width:480px){.u-a1{line-height:calc(.65217vw + 16.86957px)}}@media (min-width:1400px){.u-a1{line-height:26px}}@media (min-width:2000px){.u-a1{line-height:26px}}@media (max-width:480px){.u-a1{letter-spacing:0}}.u-b0{font-family:Hanken-Grotesk,sans-serif;font-size:16px;line-height:23px;font-weight:400}@media (min-width:480px){.u-b0{font-size:16px}}@media (min-width:1400px){.u-b0{font-size:16px}}@media (min-width:480px){.u-b0{line-height:23px}}@media (min-width:1400px){.u-b0{line-height:23px}}.u-b1{font-family:Hanken-Grotesk,sans-serif;font-size:13px;line-height:19px;font-weight:400}.u-uppercase{text-transform:uppercase}.u-capitalize{text-transform:capitalize}.u-text-center{text-align:center}.u-text-right{text-align:right}.u-underline{text-decoration:underline}.u-fw-100,.u-fw-thin{font-weight:100}.u-fw-200,.u-fw-extra-light{font-weight:200}.u-fw-300,.u-fw-light{font-weight:300}.u-fw-400,.u-fw-normal,.u-fw-regular{font-weight:400}.u-fw-500,.u-fw-medium{font-weight:500}.u-fw-600,.u-fw-semi-bold{font-weight:600}.u-fw-700,.u-fw-bold{font-weight:700}.u-fw-800,.u-fw-extra-bold{font-weight:800}.u-fw-900,.u-fw-black{font-weight:900}
+/**
+ * Tools
+ */
+/**
+ * Get breakpoint from breakpoints settings map
+ */
+/**
+ * Media query mixin
+ * @param {} $to - Value from $settings-breakpoints
+ * available breakpoints can be found in _settings.breakpoints.scss
+ * usage for max width:
+ * @include mq(md){};
+ * usage for min width:
+ * @include mq(null, md)
+ */
+/**
+ * Font face mixin
+ * @param {string} $font-name - Name of the font
+ * @param {string} $font-filename - Name of the file without extension
+ * @param {number} $version - Font version
+ * @param {number} $font-weight - Font weight value
+ * @param {string} $font-name - Font style property (if the font is italic)
+ * usage:
+ * @include font-face("Hanken-Grotesk", "HankenGrotesk-Regular");
+ * usage for weight or style other than default
+ * @include font-face(
+ *  "Hanken-Grotesk",
+ *  "HankenGrotesk-SemiBold",
+ *  $font-weight: 600,
+ *  $font-style: italic
+ * );
+ */
+/**
+ * Mixin for setting default font size and line height
+ */
+/**
+ * Mixin for setting default font family and font weight
+ */
+/**
+ * Convert font-size from px to rem
+ * 1. Default font size on html element is 100%, equivalent to 16px;
+ * @param {number} $size - the value in pixel you want to convert
+ * usage:
+ * padding-top: rem(20px);
+ */
+/**
+ * Convert font-size from px to em
+ * 1. Default font size on html element is 100%, equivalent to 16px;
+ * @param {number} $size - the value in pixel you want to convert
+ * usage:
+ * padding-top: em(20px);
+ */
+/**
+ * Hover support mixin
+ * Detect if device supports hover interaction
+ * 1. If device is not supporting hover, add properties as active state styles
+ * 2. If device is supporting hover, add properties as hover state styles
+ * usage:
+ * @include hover{}
+ */
+/**
+ * Get transition easing from $settings-transitions-easing
+ */
+/**
+ * Transition function
+ * @param {string} $transitionName - Name of the transition from $settings-transitions
+ * @param {string} $transitionEasing - get transition easing from $settings-transitions-easing
+ * usage:
+ * transition: getTransition;
+ * transition: getTransition(slide, ease-in-quad);
+ */
+/**
+ * Custom transition function
+ * used when you need to specify custom transition for only one or multiple properties but not all
+ * if you will not change the property use getTransition instead
+ * default easing is from getTransitionEasing
+ * @param {string} $transitions - any number of transitions
+ * usage:
+ * transition: getCustomTransition(opacity);
+ * transition: getCustomTransition(transform 0.3s);
+ * transition: getCustomTransition(transform 0.5s ease, background-color 0.2s);
+ * transition: getCustomTransition(
+ *                  top 0.3s cubic-bezier(0.23, 1, 0.32, 1),
+ *                  transform 0.3s cubic-bezier(0.23, 1, 0.32, 1) 0.3s
+ *               );
+ */
+/**
+ * Unfold transition function
+ * Helper for getCustomTransition();
+ * Takes any number of arguments passed to getCustomTransition() and makes unfolds them to single properties
+ * 1. Transition property defaults
+ * 2. Grab transition properties if they exist
+ */
+/**
+ * Context
+ */
+/**
+ * Viewport width function
+ * 1. 1 vw is equal to 1% of the viewport width
+ * @param {number} $size - the value in pixel you want to convert
+ * usage:
+ * padding-top: get-vw(100px);
+ */
+/**
+ * Viewport height function
+ * 1. 1 vw is equal to 1% of the viewport width
+ * @param {number} $size - the value in pixel you want to convert
+ * usage:
+ * padding-top: get-vh(100px);
+ */
+/**
+ * Get z-index from $settings-zindex
+ * usage:
+ * z-index: getZindex(navigation);
+ * z-index: getZindex(navigation, 1);
+ */
+/**
+ * Third party tools
+ */
+/**
+ * Settings
+ */
+/**
+ * Breakpoints
+ */
+/**
+ * Breakpoints - map
+ */
+/**
+ * Colors
+ */
+/**
+ * Colors - re-assigning
+ */
+/**
+ * Colors - components
+ */
+/**
+ * Hanken Grotesk
+ */
+@font-face {
+  font-family: "Hanken-Grotesk";
+  src: url("../fonts/HankenGrotesk-Regular.woff2?1") format("woff2"), url("../fonts/HankenGrotesk-Regular.woff?1") format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap; }
+
+@font-face {
+  font-family: "Hanken-Grotesk";
+  src: url("../fonts/HankenGrotesk-SemiBold.woff2?1") format("woff2"), url("../fonts/HankenGrotesk-SemiBold.woff?1") format("woff");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap; }
+
+/**
+ * Font variables
+ */
+/**
+ * Transition easing map
+ */
+/**
+ * Transitions map
+ */
+/**
+ * Z-index map
+ */
+/**
+ * Generic
+ */
+/**
+ * Third party generics
+ */
+/**
+ * b-reset.scss - modern CSS reset used by Bornfight frontend team.
+ * Consists of best CSS reset practices combined into one file.
+ */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ * 3. Tells the browser to account for any border and padding in the values you specify for an element's width and height
+ */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  /* 3 */
+  width: 100%; }
+
+/**
+ * All elements inherit box model
+ */
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+/**
+ * Reset elements in all browsers
+ */
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent; }
+
+/**
+ * Set core body defaults
+ * 1. sets the behavior for a scrolling box when scrolling is triggered by the navigation or CSSOM scrolling APIs.
+ * 2. The browser emphasizes rendering speed over legibility and geometric precision when drawing text.
+ * 3. Disables the browser's inflation algorithm on some smart phones and tablets.
+ * 4. Font smoothing
+ */
+body {
+  scroll-behavior: smooth;
+  /* 1 */
+  text-rendering: optimizeSpeed;
+  /* 2 */
+  -webkit-text-size-adjust: none;
+  /* 3 */
+  -webkit-font-smoothing: antialiased;
+  /* 4 */
+  -moz-osx-font-smoothing: grayscale;
+  /* 4 */
+  width: 100%; }
+
+/**
+ * Remove list style from lists
+ */
+ul {
+  list-style: none; }
+
+/**
+ * Make media easier to work with
+ */
+img,
+iframe,
+video,
+object,
+embed {
+  display: block;
+  max-width: 100%; }
+
+/**
+ * Remove outline from tabindex -1
+ */
+[tabindex="-1"] {
+  outline: none !important; }
+
+/**
+ * Add the correct height in Firefox.
+ */
+hr {
+  height: 0; }
+
+/**
+ * Add the correct text decoration in Chrome, Edge, and Safari.
+ */
+abbr[title] {
+  -webkit-text-decoration: underline dotted;
+          text-decoration: underline dotted; }
+
+/**
+ * Add the correct font weight in Edge and Safari.
+ */
+b,
+strong {
+  font-weight: bold; }
+
+/**
+ * 1. Improve consistency of default fonts in all browsers. (https://github.com/sindresorhus/modern-normalize/issues/3)
+ * 2. Correct the odd 'em' font sizing in all browsers.
+ */
+code,
+kbd,
+samp,
+pre {
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/**
+ * Prevent 'sub' and 'sup' elements from affecting the line height in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sub {
+  bottom: -0.25em; }
+
+sup {
+  top: -0.5em; }
+
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */ }
+
+/**
+ * Remove the inheritance of text transform in Edge and Firefox.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+  /* 1 */ }
+
+/**
+ * Correct the inability to style clickable types in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * Remove the inner border and padding in Firefox.
+ */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus styles unset by the previous rule.
+ */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Add the correct vertical alignment in Chrome and Firefox.
+ */
+progress {
+  vertical-align: baseline; }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Safari.
+ */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * 1. Correct the odd appearance in Chrome and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to 'inherit' in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/**
+ * Add the correct display in Chrome and Safari.
+ */
+summary {
+  display: list-item; }
+
+/**
+ * Remove all animations and transitions for people that prefer not to see them
+ */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+
+/**
+ * Browser specific form elements reset
+ */
+/**
+ * Search input browser additions reset
+ * 1. Clears the 'X' from Chrome
+ * 2. Clears the 'X' from Internet Explorer
+ */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  /* 1 */
+  -webkit-appearance: none;
+  display: none; }
+
+input[type="search"]::-ms-clear,
+input[type="search"]::-ms-reveal {
+  /* 2 */
+  display: none;
+  width: 0;
+  height: 0; }
+
+/**
+ * Remove arrows/spinners from number input
+ * 1. Chrome, Safari, Edge, Opera
+ * 2. Firefox
+ */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  /* 1 */
+  -webkit-appearance: none;
+  margin: 0; }
+
+input[type="number"] {
+  /* 2 */
+  -moz-appearance: textfield; }
+
+/**
+ * Remove Safari autocomplete additions
+ * 1. Contacts fill button
+ * 2. Password fill button
+ * 3. Number input spinner
+ */
+input[autocomplete="off"]::-webkit-contacts-auto-fill-button,
+input[autocomplete="off"]::-webkit-credentials-auto-fill-button,
+input[autocomplete="off"]:focus::-webkit-textfield-decoration-container {
+  /* 1, 2, 3 */
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  height: 0;
+  width: 0;
+  margin: 0; }
+
+/**
+ * Remove select triangle on IE
+ */
+select::-ms-expand {
+  display: none; }
+
+/**
+ * Remove dotted outline from range input on Firefox
+ */
+input[type=range]::-moz-focus-outer {
+  border: 0; }
+
+/**
+ * Elements
+ */
+html,
+body {
+  -webkit-font-smoothing: antialiased; }
+
+body {
+  font-family: "Hanken-Grotesk", sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.44444em;
+  color: #000000;
+  background-color: #ffffff; }
+
+a {
+  color: inherit;
+  text-decoration: none; }
+
+/**
+ * Objects
+ */
+/**
+ * Components
+ */
+/**
+ * Custom video player
+ * 1. Settings
+ * 2. Time input track styles
+ * 3. Time input thumb styles
+ * 4. Volume input track styles
+ * 5. Volume input thumb styles
+ * 6. Custom video player wrapper styles
+ * 7. Indicator for playback state
+ * 8. HTML Video styles
+ * 9. Controls wrapper
+ * 10. Progress wrapper
+ * 11. Progress bar styles - cross browser progress element for displaying elapsed time
+ * 12. Time range input styles - cross browser range input for navigating in time
+ * 13. Actions wrapper - contains all action buttons
+ * 14. Actions left area
+ * 15. Volume wrapper
+ * 16. Volume range input styles - cross browser range input for volume
+ * 17. Action buttons - accessible buttons that do action
+ * 18. Icon manipulation
+ * 19. Reset SVG styles inside player
+ */
+/* 1 */
+/* 2 */
+/* 3 */
+/* 4 */
+/* 5 */
+/* 6 */
+.c-custom-video-player {
+  position: relative;
+  overflow: hidden;
+  color: #ffffff;
+  font-family: "Hanken-Grotesk", sans-serif;
+  font-size: 13px;
+  line-height: 19px;
+  /* 7 */
+  /* 8 */
+  /* 9 */
+  /* 10 */
+  /* 11 */
+  /* 12 */
+  /* 13 */
+  /* 14 */
+  /* 15 */
+  /* 16 */
+  /* 17 */
+  /* 18 */
+  /* 19 */ }
+
+@media (min-width: 480px) {
+  .c-custom-video-player {
+    font-size: calc(0.1087vw + 12.47826px); } }
+
+@media (min-width: 1400px) {
+  .c-custom-video-player {
+    font-size: calc(0.33333vw + 9.33333px); } }
+
+@media (min-width: 2000px) {
+  .c-custom-video-player {
+    font-size: 16px; } }
+
+@media (min-width: 480px) {
+  .c-custom-video-player {
+    line-height: calc(0.1087vw + 18.47826px); } }
+
+@media (min-width: 1400px) {
+  .c-custom-video-player {
+    line-height: calc(0.33333vw + 15.33333px); } }
+
+@media (min-width: 2000px) {
+  .c-custom-video-player {
+    line-height: 22px; } }
+
+.c-custom-video-player:hover .c-custom-video-player__controls {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%); }
+
+.c-custom-video-player__state-indicator {
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 3.125rem;
+  height: 3.125rem;
+  border-radius: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53); }
+
+.is-paused .c-custom-video-player__state-indicator {
+  opacity: 1;
+  visibility: visible; }
+
+.c-custom-video-player__video {
+  width: 100%;
+  height: 100%; }
+
+.c-custom-video-player__controls {
+  right: 0;
+  left: 0;
+  padding: 2.1875rem 0.625rem 0.625rem;
+  position: absolute;
+  bottom: 0;
+  -webkit-transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: all 0.3s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  background: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(80%, rgba(0, 0, 0, 0.7)));
+  background: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.7) 80%);
+  -webkit-transform: translateY(100%);
+          transform: translateY(100%); }
+
+.is-paused .c-custom-video-player__controls {
+  -webkit-transform: translateY(0%);
+          transform: translateY(0%); }
+
+.c-custom-video-player__progress {
+  position: relative;
+  height: 3px; }
+
+.c-custom-video-player__progress-bar {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border: none;
+  outline: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 3px;
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%); }
+
+.c-custom-video-player__progress-bar::-webkit-progress-bar {
+  background-color: rgba(255, 255, 255, 0.3); }
+
+.c-custom-video-player__progress-bar::-webkit-progress-value {
+  background: red; }
+
+.c-custom-video-player__progress-bar::-moz-progress-bar {
+  background: red; }
+
+.c-custom-video-player__progress-bar::-ms-fill {
+  background: red; }
+
+.c-custom-video-player__time-input {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  -webkit-appearance: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  -webkit-transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  cursor: pointer;
+  min-height: 12px;
+  background: transparent;
+  font: inherit; }
+
+.c-custom-video-player__time-input::-webkit-slider-thumb {
+  -webkit-appearance: none; }
+
+.c-custom-video-player__time-input::-webkit-slider-runnable-track {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  width: 100%;
+  height: 3px;
+  background: transparent; }
+
+.c-custom-video-player__time-input::-moz-range-track {
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  height: 3px;
+  background: transparent; }
+
+.c-custom-video-player__time-input::-ms-track {
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  height: 3px;
+  background: transparent; }
+
+.c-custom-video-player__time-input::-webkit-slider-thumb {
+  margin-top: -4.5px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: red; }
+
+.c-custom-video-player__time-input::-moz-range-thumb {
+  box-sizing: border-box;
+  border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: red; }
+
+.c-custom-video-player__time-input::-ms-thumb {
+  margin-top: 0;
+  box-sizing: border-box;
+  border: none;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: red; }
+
+.c-custom-video-player__time-input::-ms-tooltip {
+  display: none; }
+
+.c-custom-video-player__actions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 0.9375rem; }
+
+.c-custom-video-player__actions-left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 0px;
+          flex: 1 0 0; }
+
+.c-custom-video-player__volume {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.c-custom-video-player__volume-input {
+  -webkit-appearance: none;
+  margin: 0 0.625rem;
+  padding: 0;
+  width: 6.25rem;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  outline: none;
+  -webkit-transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  transition: all 0.2s cubic-bezier(0.55, 0.085, 0.68, 0.53);
+  cursor: pointer;
+  min-height: 11px;
+  background: transparent;
+  font: inherit; }
+
+.c-custom-video-player__volume-input::-webkit-slider-thumb {
+  -webkit-appearance: none; }
+
+.c-custom-video-player__volume-input::-webkit-slider-runnable-track {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  width: 100%;
+  height: 3px;
+  background: #ffffff; }
+
+.c-custom-video-player__volume-input::-moz-range-track {
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  height: 3px;
+  background: #ffffff; }
+
+.c-custom-video-player__volume-input::-ms-track {
+  box-sizing: border-box;
+  border: none;
+  width: 100%;
+  height: 3px;
+  background: #ffffff; }
+
+.c-custom-video-player__volume-input::-webkit-slider-thumb {
+  margin-top: -4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: none;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #ffffff; }
+
+.c-custom-video-player__volume-input::-moz-range-thumb {
+  box-sizing: border-box;
+  border: none;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #ffffff; }
+
+.c-custom-video-player__volume-input::-ms-thumb {
+  margin-top: 0;
+  box-sizing: border-box;
+  border: none;
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+  background: #ffffff; }
+
+.c-custom-video-player__volume-input::-ms-tooltip {
+  display: none; }
+
+.c-custom-video-player__action-button {
+  background: transparent;
+  text-decoration: none;
+  cursor: pointer;
+  padding: 5px 0.625rem;
+  outline: none;
+  border: none;
+  vertical-align: top;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border-radius: 0;
+  position: relative; }
+
+.c-custom-video-player__play {
+  display: none; }
+
+.is-paused .c-custom-video-player__play {
+  display: inline-block; }
+
+.c-custom-video-player__pause {
+  display: inline-block; }
+
+.is-paused .c-custom-video-player__pause {
+  display: none; }
+
+.c-custom-video-player__sound {
+  display: inline-block; }
+
+.is-muted .c-custom-video-player__sound {
+  display: none; }
+
+.c-custom-video-player__mute {
+  display: none; }
+
+.is-muted .c-custom-video-player__mute {
+  display: inline-block; }
+
+.c-custom-video-player__full-screen {
+  display: inline-block; }
+
+.is-full-screen .c-custom-video-player__full-screen {
+  display: none; }
+
+.c-custom-video-player__exit-full-screen {
+  display: none; }
+
+.is-full-screen .c-custom-video-player__exit-full-screen {
+  display: inline-block; }
+
+.c-custom-video-player svg {
+  width: 0.75rem;
+  height: 0.75rem;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor;
+  color: #ffffff; }
+
+/**
+ * Pages
+ */
+/**
+ * Utilities
+ */
+.u-icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 0;
+  stroke: currentColor;
+  fill: currentColor; }
+
+.u-a3 {
+  font-family: "Hanken-Grotesk", sans-serif;
+  font-size: 35px;
+  line-height: 43px;
+  letter-spacing: 2px;
+  font-weight: normal; }
+
+@media (min-width: 480px) {
+  .u-a3 {
+    font-size: calc(4.67391vw + 12.56522px); } }
+
+@media (min-width: 1400px) {
+  .u-a3 {
+    font-size: 78px; } }
+
+@media (min-width: 2000px) {
+  .u-a3 {
+    font-size: 78px; } }
+
+@media (min-width: 480px) {
+  .u-a3 {
+    line-height: calc(4.67391vw + 20.56522px); } }
+
+@media (min-width: 1400px) {
+  .u-a3 {
+    line-height: 86px; } }
+
+@media (min-width: 2000px) {
+  .u-a3 {
+    line-height: 86px; } }
+
+@media (max-width: 480px) {
+  .u-a3 {
+    letter-spacing: 0; } }
+
+.u-a2 {
+  font-family: "Hanken-Grotesk", sans-serif;
+  font-size: 35px;
+  line-height: 43px;
+  font-weight: normal; }
+
+@media (min-width: 480px) {
+  .u-a2 {
+    font-size: calc(1.63043vw + 27.17391px); } }
+
+@media (min-width: 1400px) {
+  .u-a2 {
+    font-size: 50px; } }
+
+@media (min-width: 2000px) {
+  .u-a2 {
+    font-size: 50px; } }
+
+@media (min-width: 480px) {
+  .u-a2 {
+    line-height: calc(2.5vw + 31px); } }
+
+@media (min-width: 1400px) {
+  .u-a2 {
+    line-height: calc(-1.66667vw + 89.33333px); } }
+
+@media (min-width: 2000px) {
+  .u-a2 {
+    line-height: 56px; } }
+
+.u-a1 {
+  font-family: "Hanken-Grotesk", sans-serif;
+  font-size: 14px;
+  line-height: 20px;
+  letter-spacing: 0.3px;
+  font-weight: normal; }
+
+@media (min-width: 480px) {
+  .u-a1 {
+    font-size: calc(0.43478vw + 11.91304px); } }
+
+@media (min-width: 1400px) {
+  .u-a1 {
+    font-size: 18px; } }
+
+@media (min-width: 2000px) {
+  .u-a1 {
+    font-size: 18px; } }
+
+@media (min-width: 480px) {
+  .u-a1 {
+    line-height: calc(0.65217vw + 16.86957px); } }
+
+@media (min-width: 1400px) {
+  .u-a1 {
+    line-height: 26px; } }
+
+@media (min-width: 2000px) {
+  .u-a1 {
+    line-height: 26px; } }
+
+@media (max-width: 480px) {
+  .u-a1 {
+    letter-spacing: 0; } }
+
+.u-b0 {
+  font-family: "Hanken-Grotesk", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+  font-weight: normal; }
+
+@media (min-width: 480px) {
+  .u-b0 {
+    font-size: 16px; } }
+
+@media (min-width: 1400px) {
+  .u-b0 {
+    font-size: 16px; } }
+
+@media (min-width: 480px) {
+  .u-b0 {
+    line-height: 23px; } }
+
+@media (min-width: 1400px) {
+  .u-b0 {
+    line-height: 23px; } }
+
+.u-b1 {
+  font-family: "Hanken-Grotesk", sans-serif;
+  font-size: 13px;
+  line-height: 19px;
+  font-weight: normal; }
+
+.u-uppercase {
+  text-transform: uppercase; }
+
+.u-capitalize {
+  text-transform: capitalize; }
+
+.u-text-center {
+  text-align: center; }
+
+.u-text-right {
+  text-align: right; }
+
+.u-underline {
+  text-decoration: underline; }
+
+.u-fw-thin,
+.u-fw-100 {
+  font-weight: 100; }
+
+.u-fw-extra-light,
+.u-fw-200 {
+  font-weight: 200; }
+
+.u-fw-light,
+.u-fw-300 {
+  font-weight: 300; }
+
+.u-fw-regular,
+.u-fw-normal,
+.u-fw-400 {
+  font-weight: 400; }
+
+.u-fw-medium,
+.u-fw-500 {
+  font-weight: 500; }
+
+.u-fw-semi-bold,
+.u-fw-600 {
+  font-weight: 600; }
+
+.u-fw-bold,
+.u-fw-700 {
+  font-weight: 700; }
+
+.u-fw-extra-bold,
+.u-fw-800 {
+  font-weight: 800; }
+
+.u-fw-black,
+.u-fw-900 {
+  font-weight: 900; }
+
+/**
+ * Vendor
+ */
+
+/*# sourceMappingURL=style.css.map */

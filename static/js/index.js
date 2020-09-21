@@ -39,6 +39,12 @@ ready(() => {
 
     console.info("dev by: %c Bornfight ", credits);
 
+    /**
+     * mainVideoWrapper provides opportunity to pass different container|wrapper on every page transition
+     * @type {Element} mainVideoWrapper
+     */
+    const mainVideoWrapper = document.querySelector(".js-main-video-wrapper");
+
     const video = new CustomVideoPlayer();
-    video.init();
+    video.init(mainVideoWrapper);
 });

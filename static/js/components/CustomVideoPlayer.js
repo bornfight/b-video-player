@@ -19,6 +19,7 @@ export default class CustomVideoPlayer {
             playButton: ".js-custom-video-player-play",
             fullScreenButton: ".js-custom-video-player-full-screen",
             states: {
+                initialized: "is-initialized",
                 playing: "is-playing",
                 paused: "is-paused",
                 mute: "is-muted",
@@ -52,6 +53,13 @@ export default class CustomVideoPlayer {
         console.log("Custom video player init()");
 
         for (let i = 0; i < this.videoPlayer.length; i++) {
+            if (
+                this.videoPlayer[i].classList.contains(
+                    this.DOM.states.initialized,
+                )
+            ) {
+                continue;
+            }
             let videoContainer = this.videoPlayer[i];
             let videoEl = videoContainer.querySelector(this.DOM.videoEl);
             let videoProgressBarEl = videoContainer.querySelector(
@@ -74,6 +82,11 @@ export default class CustomVideoPlayer {
             let fullScreenButton = videoContainer.querySelector(
                 this.DOM.fullScreenButton,
             );
+
+            /**
+             * Add initialized class
+             */
+            videoContainer.classList.add(this.DOM.states.initialized);
 
             /**
              * Await meta data
